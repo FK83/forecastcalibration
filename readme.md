@@ -7,12 +7,12 @@ Marc-Oliver Pohle:
 
 The package’s main functions are as follows:
 
--   `score_calibration_es` computes the quantities *Û*<sub>ES, *t*</sub>
-    and *D̂*<sub>ES, *t*</sub> for the test versions based on the Energy
-    Score
--   `knueppel_test` implements the uniformity test by Knüppel
-    (JBES, 2015) that allows for time dependence under the H0
--   `t_hac` implements a HAC robust t-test
+- `score_calibration_es` computes the quantities $\hat U_{\text{ES}, t}$
+  and $\hat D_{\text{ES}, t}$ for the test versions based on the Energy
+  Score
+- `knueppel_test` implements the uniformity test by Knüppel (JBES, 2015)
+  that allows for time dependence under the H0
+- `t_hac` implements a HAC robust t-test
 
 ## Installation
 
@@ -32,7 +32,7 @@ This toy example simulates `n` IID time periods. The forecast
 distribution is H0 considered in the simulation study of Section 4 in
 the paper; the true distribution is given by H1. Note that
 auto-calibration is violated here, so it is desirable for the tests to
-reject with a small *p*-value.
+reject with a small $p$-value.
 
 ``` r
 library(mvtnorm)
@@ -110,7 +110,7 @@ t_hac(d) # Entropy test
 ## Calibration plot
 
 Here we visualize the entropy test results for the simulated data. The
-plot is in the same style as Figures X, Y and Z in the paper.
+plot is in the same style as Figure 2 in the paper.
 
 ``` r
 # load ggplot2 package
