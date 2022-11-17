@@ -1,0 +1,14 @@
+Package: forecastcalibration
+Type: Package
+Title: Testing Whether a Forecast Distribution is Calibrated
+Version: 0.1.0
+Author: Fabian Krueger, with contributions by Malte Knueppel
+Maintainer: Fabian Krueger <fabian.krueger83@gmail.com>
+Description: Covers univariate and multivariate forecast distributions. Implements the
+    tests by Berkowitz (2001), Knueppel (2015) and Knueppel et al (2022+). 
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.1
+Imports: Rcpp (>= 1.0.5), magrittr, sandwich, scoringRules
+LinkingTo: Rcpp, RcppArmadillo

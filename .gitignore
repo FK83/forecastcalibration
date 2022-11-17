@@ -1,0 +1,8 @@
+.Rproj.user
+.Rhistory
+.Rprofile
+*.o
+*.so
+*.dll
+/src-i386/
+/src-x86_64/
