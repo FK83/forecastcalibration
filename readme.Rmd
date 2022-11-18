@@ -42,8 +42,7 @@ sig_fc <- matrix(.5, d, d)
 diag(sig_fc) <- 1
 
 # true covariance matrix (H1 in Section 4)
-sig_true <- sig_fc
-diag(sig_true) <- (1.1)^2
+sig_true <- sig_fc*(1.1)^2
 
 # simulate outcomes for n time periods
 y <- rmvnorm(n, sigma = sig_true)

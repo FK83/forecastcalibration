@@ -52,8 +52,7 @@ sig_fc <- matrix(.5, d, d)
 diag(sig_fc) <- 1
 
 # true covariance matrix (H1 in Section 4)
-sig_true <- sig_fc
-diag(sig_true) <- (1.1)^2
+sig_true <- sig_fc*(1.1)^2
 
 # simulate outcomes for n time periods
 y <- rmvnorm(n, sigma = sig_true)
@@ -77,14 +76,14 @@ knueppel_test(u) # PIT-based test (Generalized Box Transform)
 
     ## $stat
     ##          [,1]
-    ## [1,] 51.85725
+    ## [1,] 44.18174
     ## 
     ## $pval
     ##              [,1]
-    ## [1,] 1.477595e-10
+    ## [1,] 5.881627e-09
     ## 
     ## $nlags_odd
-    ## [1] 3
+    ## [1] 2
     ## 
     ## $nlags_even
     ## [1] 3
@@ -98,14 +97,14 @@ t_hac(d) # Entropy test
 
     ## $t
     ##          [,1]
-    ## [1,] 7.031735
+    ## [1,] 6.181885
     ## 
     ## $k
     ## [1] 2
     ## 
     ## $pval
     ##              [,1]
-    ## [1,] 2.039811e-12
+    ## [1,] 6.334086e-10
 
 ## Calibration plot
 
