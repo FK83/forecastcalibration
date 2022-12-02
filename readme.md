@@ -3,7 +3,7 @@ R package forecastcalibration
 
 This package accompanies the paper \`Score-based calibration testing for
 multivariate forecast distributions’ by Malte Knüppel, Fabian Krüger and
-Marc-Oliver Pohle:
+Marc-Oliver Pohle, available at <https://arxiv.org/abs/2211.16362>.
 
 The package’s main functions are as follows:
 
