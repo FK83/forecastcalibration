@@ -1,4 +1,4 @@
-// [[Rcpp::depends("RcppArmadillo")]]
+// [[Rcpp::depends(RcppArmadillo)]]
 #include <RcppArmadillo.h>
 #include <Rcpp.h>
 #include <cmath>

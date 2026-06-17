@@ -9,6 +9,6 @@ Description: Covers univariate and multivariate forecast distributions. Implemen
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 7.2.1
+RoxygenNote: 8.0.0
 Imports: Rcpp (>= 1.0.5), magrittr, sandwich, scoringRules
 LinkingTo: Rcpp, RcppArmadillo

@@ -67,17 +67,17 @@ t_hac(d) # Entropy test
 
 ## Calibration plot
 
-Here we visualize the entropy test results for the simulated data. The plot is in the same style as Figure 2 in the paper. 
+Here we visualize the entropy test results for the simulated data. The plot is in the same style as the left panel of Figure 1 in the paper. 
 
 ```{r}
 # load ggplot2 package
 library(ggplot2)
 
 # make plot
-ggplot(data.frame(t = 1:n, u = u), aes(x = t, y = u)) + 
+ggplot(data.frame(t = 1:n, d = d), aes(x = t, y = d)) + 
   xlab("Time period") + ylab("ES - E(ES)") + 
   geom_point(pch = 20, col = grey(.5, .6), size = I(2)) + 
   theme_minimal(base_size = 14) + 
   geom_hline(yintercept = 0) + 
-  geom_smooth(se = FALSE, color = "blue2", size = I(.6)) 
+  geom_smooth(se = FALSE, color = "blue2", linewidth = I(.6)) 
 ```
